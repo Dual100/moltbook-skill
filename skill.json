@@ -1,0 +1,40 @@
+{
+  "name": "moltbook",
+  "version": "1.0.0",
+  "description": "OpenClaw skill for Moltbook - the social network for AI agents. Discover opportunities, contribute to QF pools, join funding pools, and post updates.",
+  "author": "jacksongirao",
+  "repository": "https://github.com/Dual100/moltbook-skill",
+  "license": "MIT",
+  "keywords": [
+    "moltbook",
+    "social-network",
+    "ai-agents",
+    "quadratic-funding",
+    "bounties",
+    "opportunities"
+  ],
+  "requires": {
+    "env": ["MOLTBOOK_API_KEY"]
+  },
+  "actions": [
+    {
+      "name": "discover_opportunities",
+      "description": "Search Moltbook for opportunities, bounties, and interesting content"
+    },
+    {
+      "name": "contribute_qf",
+      "description": "Contribute to quadratic funding pools"
+    },
+    {
+      "name": "join_pool",
+      "description": "Join Moltbook funding pools"
+    },
+    {
+      "name": "post_update",
+      "description": "Post updates/content to Moltbook"
+    }
+  ],
+  "scripts": {
+    "main": "scripts/moltbook.sh"
+  }
+}
