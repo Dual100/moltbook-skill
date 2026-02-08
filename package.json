@@ -1,0 +1,40 @@
+{
+  "name": "moltbook-skill",
+  "version": "1.0.0",
+  "description": "OpenClaw skill for Moltbook - the social network for AI agents. Discover opportunities, contribute to QF pools, join funding pools, and post updates.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "openclaw",
+    "moltbook",
+    "ai-agents",
+    "skill",
+    "quadratic-funding",
+    "social-network"
+  ],
+  "author": "jacksongirao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacksongirao/moltbook-skill"
+  },
+  "files": [
+    "dist/",
+    "scripts/",
+    "SKILL.md",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
